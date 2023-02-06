@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module specificationVersion="2.0">
+	<Content type="html">
+		<![CDATA[	
+	<link rel="stylesheet" type="text/css" href="css/consistencyCheck.css"/>
+	<div id="dngError"></div>
+			<div>
+				<button id="button-chk">Consistency Check</button>
+			</div>
+			<div id="ptsa-chk">
+				<br/>
+				<input id="ptsa-chk-click" type="checkbox"/>
+				<label for="ptsa-chk-click">Perform PTSA2.X  Interface Check</label><br/><br/>
+				<label for="ptsa-chk-click"><B>Note:-</B>This option needs to be enabled for PTSA2.x interface check</label>
+			</div>
+			<div id="ptsa1-chk">
+				<br/>
+				<input id="ptsa1-chk-click" type="checkbox"/>
+				<label for="ptsa1-chk-click">Perform PTSA1.X  Interface Check - testing</label><br/><br/>
+				<label for="ptsa1-chk-click"><B>Note:-</B>This option needs to be enabled for PTSA1.x interface check</label>
+			</div>
+			<div id="hideable" style="text-align:left;display:none;">
+				<br/><br/>
+				<progress id="percentCompleteBar" value="0" max="100" style="width:97%">
+				</progress>
+				<span id="updateInfo"></span>
+				<!--<text id="updateInfo"></text> -->
+				<br/><br/>
+			</div>
+	<br/>
+	<div id = "heading">
+<!--	<a href="https://connect.bosch.com/wikis/home?lang=de-de#!/wiki/W8018d681a3cd_4016_b020_278d2422a4b5/page/Consistency%20Check" target="_blank">Wiki Page</a>-->
+	</div>
+	<div id="loadExplorerDiv">
+		<br/>
+		<input id="loadExplorer" type="checkbox"/>
+		<label for="loadExplorer">Load module explorer</label><br/>
+	</div>
+	<div id="explorerHeading"></div>
+	<div id="explorer"></div>
+	<div id="Error"></div>
+	<script src="jquery-dependancies/jquery-1.12.4.min.js"></script>
+	<script src="js/consistencyCheck.js"></script>
+	<script src="js/consistencyPTSA2.js"></script>
+	<script src="js/constants.js"></script>
+	<script type="text/javascript" src="jquery-dependancies/xlsx.full.min.js"></script>
+    <script type="text/javascript" src="jquery-dependancies/jszip.js"></script>
+]]>
+	</Content>
+	<ModulePrefs title="Consistency Check v2021.1.0_July (v14 compatible)">
+		<Optional feature="com.ibm.rdm.rm.api"/>
+		<Require feature="dynamic-height"/>
+	</ModulePrefs>
+</Module>

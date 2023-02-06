@@ -1,0 +1,18 @@
+table
+{
+border-collapse: collapse;
+border-spacing: 0px;
+margin-top: 20px;
+margin-bottom: 40px;
+}
+table, th, td
+{
+padding: 5px;
+border: 2px solid black;
+}
+
+#error
+{
+font-size: 20px;
+font-weight:bold;
+}
