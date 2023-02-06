@@ -1,0 +1,151 @@
+body {
+  padding: 5px;
+}
+
+.header {
+  display: flex;
+  font-size: 120%;
+  align-items: center;
+  padding: 5px;
+  background-color: #3087b3;
+  color: #fff;
+}
+
+.header select {
+  margin-right: 5px;
+}
+
+.controls {
+  margin-left: auto;
+}
+
+.muted {
+  text-align: center;
+  color: #aaa;
+  padding: 10px 0;
+}
+
+.tab__nav {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.tab {
+  padding: 5px 0;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  color: #3087b3;
+}
+
+.tab:hover {
+  background: #eee;
+}
+
+.tab--active {
+  font-weight: bold;
+  background: #eee;
+  color: #000;
+}
+
+.widget {
+  cursor: pointer;
+  padding: 8px 20px;
+  position: relative;
+  border: 1px solid #ccc;
+  border-top: 0;
+  overflow: hidden;
+}
+
+.widget:first-child {
+  border-top: 1px solid #ccc;
+}
+
+.widget:hover {
+  background-color: #e8f3f9;
+}
+
+.widget:hover > .widget__version {
+  display: none;
+}
+
+.widget:hover > .widget__options {
+  display: flex;
+}
+
+.widget__name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.widget__version {
+  position: absolute;
+  top: 1px;
+  right: 0;
+  padding: 5px 20px 5px 5px;
+  background: #fff;
+}
+
+.widget__options {
+  display: none;
+  position: absolute;
+  top: 1px;
+  right: 0;
+}
+
+.widget__options > div {
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+}
+
+.widget__options > div:hover {
+  background-color: #fedda8;
+  border-color: #feb354;
+}
+
+.widget__options > div::after {
+  content: '';
+  display: block;
+  height: 100%;
+  background-image: url("https://www.intranet.bosch.com/doku/bbm_alm_opensocialgadgets/_css/img/sprites-dng.png");
+}
+
+.options__wiki::after {
+  background-position: -340px -186px;
+}
+
+.options__link::after {
+  background-position: -127px -191px;
+}
+
+.options__vers::after {
+  background-position: -239px -137px;
+}
+
+.widget__bookmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 100%;
+  background: url('data:image/svg+xml,<svg%20xmlns%3D"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg"%20width%3D"12"%20height%3D"12"%20viewBox%3D"0%200%2024%2024"><path%20stroke%3D"%23333"%20fill%3D"%23eee"%20d%3D"M12%20.288l2.833%208.718h9.167l-7.417%205.389%202.833%208.718-7.416-5.388-7.417%205.388%202.833-8.718-7.416-5.389h9.167z"%2F><%2Fsvg>')
+    no-repeat;
+  background-position: center;
+}
+
+.widget__bookmark.active {
+  background-image: url('data:image/svg+xml,<svg%20xmlns%3D"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg"%20width%3D"12"%20height%3D"12"%20viewBox%3D"0%200%2024%2024"><path%20stroke%3D"%23333"%20fill%3D"%23f8c632"%20d%3D"M12%20.288l2.833%208.718h9.167l-7.417%205.389%202.833%208.718-7.416-5.388-7.417%205.388%202.833-8.718-7.416-5.389h9.167z"%2F><%2Fsvg>');
+}
+
+.widget__alert {
+  display: inline-block;
+  position: absolute !important;
+  top: -30px;
+  right: 0;
+  transition: top ease-out 0.5s;
+}

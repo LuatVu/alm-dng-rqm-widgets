@@ -1,0 +1,113 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+.rmf_container {
+width: 100%;
+height: 100%;
+}
+
+.rmf_halfContainer {
+  width: 95%;
+  height: 45%;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 1px black !important;
+}
+
+.rmf_title {
+margin: auto;
+}
+
+.openModalButton {
+  color: white !important;
+  font-size: large;
+  background-color: #0f62fe !important;
+  text-align: center !important;
+  cursor: pointer !important;
+  word-wrap: break-word !important;
+  overflow: hidden !important;
+  border: solid 3px transparent !important;
+  border-radius: 0 !important;
+  width: 100%;
+  height: 100%;
+}
+
+.openModalButton:hover {
+  color: black !important;
+  background-color: #e5e5e5 !important;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+} 
+
+.info{
+	overflow-y:scroll;
+  height: 100px;
+}
+
+tbody {
+  display: block;
+  /* overflow-y: scroll; */
+  max-height:200px;
+}
+
+.nameCell {
+	font-weight: bold;
+	/* overflow-y: scroll; */
+	max-height: 50px;
+	min-width: 70px;
+	appearance: button;
+	display: inline-block;
+	color: white;
+	border: 1px solid black;
+	background: #0f62fe;
+	box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
+	cursor: pointer;
+	vertical-align: middle;
+	max-width: 100px;
+	padding: 5px;
+	text-align: center;
+}
+
+.contentCell {
+  display: block;
+  overflow-y: scroll;
+  max-height:50px;
+}

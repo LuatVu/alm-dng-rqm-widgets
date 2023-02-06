@@ -1,0 +1,93 @@
+body {
+	font-family: "Arial";
+	padding: 2px;
+	font-size: 12px;
+}
+.info{
+	overflow-y:auto;
+} 
+
+table {
+	border-collapse: collapse;
+	font-size: 1em;
+	margin: auto;
+	margin-top: 10px;
+}
+
+tbody {
+    display: block;
+    overflow-y: scroll;
+    max-height:200px;
+}
+
+div#glossary {
+	height: 200px;
+}
+
+ 
+tr {
+	border-bottom: 1px solid black;
+}
+
+td {
+	border-left: 1px solid black;
+	color: #333;
+	text-align: left;
+	padding: 2px 4px;
+}
+
+td.titleRow {
+	font-weight: bold;
+	background: #cee2f2;
+	text-align: center
+}
+
+div {
+	scrollbar-width: none; /* Firefox */
+	-ms-overflow-style: none;  /* IE 10+ */
+	overflow-y:scroll;
+	overflow-x:hidden;
+	}
+
+div::-webkit-scrollbar { 
+	display: none;  /* Chrome Safari */
+}
+
+.contentCell {
+    display: block;
+    overflow-y: scroll;
+    max-height:50px;
+}
+
+.nameCell {
+	font-weight: bold;
+	overflow-y: scroll;
+	max-height: 50px;
+	min-width: 70px;
+	appearance: button;
+	display: inline-block;
+	color: white;
+	border: 1px solid black;
+	background: #0f62fe;
+	box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
+	cursor: pointer;
+	vertical-align: middle;
+	max-width: 100px;
+	padding: 5px;
+	text-align: center;
+}
+
+.nameCell:hover {
+    color: black;
+    background: #e5e5e5;
+}
+
+td:last-child {
+	border-right: 1px solid black;
+}
+
+tr:first-child td {
+	border-top: 1px solid black;
+}
+
+

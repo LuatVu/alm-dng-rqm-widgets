@@ -1,0 +1,186 @@
+#simplemodal-container a.modalCloseImg {
+    display: none;
+}
+
+#rmf_conditionInput {
+    display: none;
+}
+
+#rmf_actorInput {
+    display: none;
+}
+
+.rmf_container {
+    padding: 20px;
+}
+
+.rmf_flex {
+    display: flex;
+}
+
+.rmf_img {
+    object-fit: contain;
+    margin-left: 5px;
+}
+
+.rmf_help {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.rmf_table {
+    box-sizing: border-box;
+}
+
+.rmf_table:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.rmf_item3 {
+    float: left;
+    width: 33.33%;
+    box-sizing: border-box;
+    display: block;
+}
+
+.rmf_item2 {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    display: block;
+}
+
+.rmf_borderBottom {
+    border-bottom: 1px solid #000;
+}
+
+.rmf_noMargin {
+    margin: 0;
+}
+
+.rmf_heading {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.rmf_subHeading {
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+}
+
+.rmf_textInput {
+    box-sizing: border-box;
+    height: 50px;
+    width: 100%;
+    max-width: 100%;
+    padding: 5px;
+}
+
+.rmf_content {
+    margin-top: 10px;
+}
+
+.rmf_textInputLimiter {
+    padding-right: 20px;
+}
+
+.rmf_checkboxOuterContainer {
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.rmf_checkboxInnerContainer {
+    align-items: center;
+    display: flex;
+    margin-right: 20px;
+}
+
+.rmf_checkboxLabel {
+    vertical-align: middle;
+    font-size: 12px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.rmf_footerButton {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+}
+
+.rmf_secondaryButton {
+    background-color: #393939 !important;
+    color: white !important;
+    cursor: pointer !important;
+    box-sizing: border-box !important;
+    min-height: 32px !important;
+    height: 64px !important;
+    text-align: center !important;
+    word-wrap: break-word !important;
+    overflow: hidden !important;
+    border: solid 3px transparent !important;
+    border-radius: 0 !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    transition: none !important;
+}
+
+.rmf_secondaryButton:hover {
+    background-color: #4c4c4c !important;
+}
+
+.rmf_primaryButton {
+    color: white !important;
+    cursor: pointer !important;
+    box-sizing: border-box !important;
+    min-height: 32px !important;
+    height: 64px !important;
+    text-align: center !important;
+    word-wrap: break-word !important;
+    overflow: hidden !important;
+    border: solid 3px transparent !important;
+    border-radius: 0 !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    transition: none !important;
+}
+
+.rmf_primaryButton:disabled {
+    cursor: not-allowed !important;
+    color: #8d8d8d !important;
+    background-color: #c6c6c6 !important;
+}
+
+.rmf_primaryButton:not([disabled]) {
+    color: white !important;
+    background-color: #0f62fe !important;
+}
+
+.rmf_primaryButton:not([disabled]):hover {
+    background-color: #0353e9 !important;
+}
+
+.rmf_closeButton{
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    height: 48px !important;
+    width: 48px !important;
+    padding: 12px !important;
+    border: 2px solid transparent !important;
+    overflow: hidden !important;
+    cursor: pointer !important;
+    background-color: initial !important;
+    transition: background-color 0.11s cubic-bezier(0.2, 0, 0.38, 0.9) !important;
+}
+
+.rmf_closeButton:hover {
+    background-color: #e5e5e5 !important;
+}

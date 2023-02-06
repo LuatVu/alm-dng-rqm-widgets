@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+ Licensed Materials - Property of IBM
+ edit_artifact.xml
+© Copyright IBM Corporation 2014
+
+U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp. 
+-->
+<Module specificationVersion="2.0">
+	<ModulePrefs title="Requirement Formulation" height="100" scrolling="true">
+		<Require feature="com.ibm.rdm.rm.api" />
+	</ModulePrefs>
+	<Content type="html">
+		<![CDATA[
+			<html>
+				<head>
+					<script src="js/jquery-1.9.1.js"></script>
+					<script src="js/main.js"></script>
+					<script src="js/jquery.simplemodal-1.4.4.js"></script>
+					<!-- <script src="js/jquery-1.12.4.min.js"></script> -->
+					<link rel="stylesheet" type="text/css" href="css/modal.css">
+				</head>
+				<body>
+					<div class="rmf_halfContainer">
+						<button id="rmf_openModalButton" class="openModalButton">Functional Requirement</button>
+					</div>
+					<div class="rmf_halfContainer">
+						<button id="rmnf_openModalButton" class="openModalButton">Non-Functional Requirement</button>
+					</div>
+
+					<!-- The Modal -->
+					<div id="rmf_modal" class="modal">
+						<div class="rmf_container rmf_borderBottom">
+							<p class="rmf_noMargin rmf_heading">
+								The ideal requirement structure
+							</p>
+							<button id="rmf_closeTopRight" class="rmf_closeButton">
+								<svg xmlns="http://www.w3.org/2000/svg" width="15.556" height="15.557" viewBox="0 0 15.556 15.557"><g transform="translate(-1133 -307)"><rect width="20" height="2" transform="translate(1134.414 307) rotate(45)"/><rect width="20" height="2" transform="translate(1133 321.142) rotate(-45)"/></g></svg>
+							</button>
+							<div id="rmf_overviewImage" class="rmf_content">
+							</div>
+						</div>
+						<div class="rmf_container rmf_borderBottom">
+							<div class="rmf_table">
+								<div class="rmf_item2">
+									<p class="rmf_noMargin rmf_heading">
+										Requirement - Preview
+									</p>
+								</div>
+								<div class="rmf_item2">
+									<p class="rmf_noMargin rmf_heading">
+										Glossary-terms
+									</p>
+								</div>
+							</div>
+
+							<div class="rmf_table">
+								<div class="rmf_item2">
+									<p id="rmf_preview"></p>
+								</div>
+								<div class="rmf_item2">
+									<div id="glossary" class="infoGlossary">
+										
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</body>
+			</html>
+		]]>
+	</Content>
+</Module>

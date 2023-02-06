@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.html": "/WebContent/main.html",
+    "jquery": "/WebContent/js/jquery-1.9.1.js",
+    "main": "/WebContent/js/main.js",
+    "modal": "/WebContent/js/jquery.simplemodal-1.4.4.js"
+  },
+  
+  "scripts": [
+    "jquery",
+    "main",
+    "modal"
+  ]
+}

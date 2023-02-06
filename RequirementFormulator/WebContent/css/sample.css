@@ -1,0 +1,27 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+.rmf_container {
+	width: 100%;
+	height: 100%;
+}
+
+.rmf_title {
+	margin: auto;
+}
+
+#rmf_openModalButton {
+    color: white !important;
+	font-size: large;
+    background-color: #0f62fe !important;
+    text-align: center !important;
+    cursor: pointer !important;
+    word-wrap: break-word !important;
+    overflow: hidden !important;
+    border: solid 3px transparent !important;
+    border-radius: 0 !important;
+	width: 100%;
+	height: 100%;
+}

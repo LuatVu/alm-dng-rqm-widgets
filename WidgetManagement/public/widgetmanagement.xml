@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+  <Content type="html" href="index.html"/>
+  <ModulePrefs title="Widget Hub">
+    <Optional feature="com.ibm.rdm.rm.api"/>
+    <Optional feature="com.ibm.team.gc.gcm.api"/>
+    <Require feature="dynamic-height"/>
+  </ModulePrefs>
+</Module>
